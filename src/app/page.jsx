@@ -1,7 +1,7 @@
 "use client";
 import Overflo from "./components/Overflo";
 import About from "./components/About";
-import Skills from "./components/Skills";
+import Mission from "./components/Courses";
 import Product from "./components/Product";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -13,7 +13,7 @@ const App = () => {
       <Navbar />
       <Overflo />
       <About />
-      <Skills />
+      <Mission />
       <Product />
       <Contact />
       <Footer />

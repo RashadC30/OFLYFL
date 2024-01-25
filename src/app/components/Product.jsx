@@ -38,12 +38,29 @@ const Product = () => {
   ];
   return (
     <section id="products">
+      <div className="bg-gray-800">
+        <div className="flex justify-center text-4xl font-semibold gap-3">
+          <h2 className="text-cyan-400">Why</h2>
+          <h2 className="text-white">This</h2>
+          <h2 className="text-green-500">Program</h2>
+        </div>
+        <ul className="flex items-center justify-center py-6 gap-10 flex-wrap">
+          <li className="flex flex-col justify-center text-2xl gap-2 text-gray-300">
+            <p>1. This program is a safe and confidential space.</p>
+            <p>2. This program is not therapy.</p>
+            <p>
+              3. This program requires the participant to be committed to
+              improving her life.
+            </p>
+          </li>
+        </ul>
+      </div>
       <div className="flex justify-center text-4xl font-semibold gap-2">
         <h3>My</h3>
         <h3 className="text-cyan-400">Products</h3>
       </div>
-      <p className="text-gray-400 mt-3 text-lg flex justify-center">
-        For Inspiration
+      <p className="text-gray-600 mt-3 text-lg flex justify-center">
+        Online Workshops
       </p>
       <br />
       <Swiper

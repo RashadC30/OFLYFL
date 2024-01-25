@@ -1,3 +1,6 @@
+import aboutpic from "../assets/images/About-Pic.png";
+import Image from "next/image";
+
 const About = () => {
   const Info = [
     { text: "Years experience", count: "01" },
@@ -12,17 +15,19 @@ const About = () => {
       </div>
       <p className="text-gray-400 text-center font-semibold">Who Am I</p>
       <div className="flex flex-col items-center md:gap-6 gap-12 max-2-6xl mx-auto text-gray-300 mt-5">
-        <p className="text-justify leading-7 w-11/12 mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut maxime
-          officiis modi, quae, blanditiis accusantium ipsa animi non quisquam
-          vero sequi sit quaerat quo a, fugit ex cupiditate nam doloribus!
-          Praesentium, vitae sit aliquam consectetur voluptas necessitatibus
-          libero id quam velit laboriosam reiciendis voluptate nihil in nemo nam
-          eum porro quod autem, explicabo dignissimos dolor itaque? Rerum esse
-          modi maxime! Sint vero nobis aspernatur voluptatem dignissimos
-          molestias ratione doloremque exercitationem quibusdam expedita non a
-          cumque sed esse fugit animi quasi ea cupiditate, error doloribus cum
-          fugiat? Impedit et similique quasi?
+        <Image
+          src={aboutpic}
+          alt=""
+          className="md:w-1/2 object-cover flex-1 flex items-center justify-center h-full"
+        />
+        <p className="text-justify leading-7 w-1/2 mx-auto">
+          Cherry is the mother of 4 natural children and 3 adopted children. She
+          is a retired registered nurse and nursing instructor for over 20
+          years. She fostered children with challenging medical needs for over
+          12 years. She is a survivor of childhood trauma and has worked with
+          young children separated from their families and traumatized, which
+          gave her other insights to pain and healing. She has authored a book
+          about her journey "Breaking Free and Loving Yourself."
         </p>
         <ul className="mt-10 flex items-center justify-center md:gap-48 gap-6">
           {Info?.map((content, i) => (
