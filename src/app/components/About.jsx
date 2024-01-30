@@ -29,21 +29,6 @@ const About = () => {
           gave her other insights to pain and healing. She has authored a book
           about her journey "Breaking Free and Loving Yourself."
         </p>
-        <ul className="mt-10 flex items-center justify-center md:gap-48 gap-6">
-          {Info?.map((content, i) => (
-            <li key={i} className="flex md:flex-row md:gap-2">
-              <div className="flex-col">
-                <div className="flex">
-                  <h3 className="md:text-4xl text-2xl font-semibold text-gray-600">
-                    {content?.count}
-                  </h3>
-                  <h3 className="text-cyan-400 font-bold text-2xl">+</h3>
-                </div>
-                <h3 className="md:text-base text-xs">{content?.text}</h3>
-              </div>
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   );
