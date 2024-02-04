@@ -15,7 +15,7 @@ const Navbar = () => {
         sticky ? "bg-white/60 text-gray-900" : "text-white"
       }`}
     >
-      <h4 className="text-xl font-bold mx-7 my-3">Cherry</h4>
+      <h4 className="text-xl font-bold mx-7 my-3">OFLYFL</h4>
       <ul
         className={`text-purple-900 hidden px-10 font-medium rounded-bl-full items-center md:flex gap-16
        py-5 text-lg ${sticky ? "md:bg-white/0" : "bg-white"}`}
