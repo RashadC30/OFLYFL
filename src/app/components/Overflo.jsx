@@ -2,11 +2,7 @@ import overflo from "../assets/images/overflo-03.png";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import Image from "next/image";
 const Overflo = () => {
-  const social_media = [
-    { icon: <FaInstagram /> },
-    { icon: <FaFacebook /> },
-    { link: <a href="http://www.instagram.com/overflo91"></a> },
-  ];
+  const social_media = [{ icon: <FaInstagram /> }, { icon: <FaFacebook /> }];
   const handleContactClick = () => {
     const contactSection = document.querySelector("#contact");
     if (contactSection) {
@@ -45,7 +41,7 @@ const Overflo = () => {
         </a>
         <ul className="mt-8 text-3xl flex text-gray-600 gap-5">
           {social_media?.map((icon, i) => (
-            <li key={i} className="hover:text-white cursor-pointer">
+            <li key={i} className="hover:text-red-600 cursor-pointer">
               {icon?.icon}
             </li>
           ))}
