@@ -1,12 +1,11 @@
 import overflo from "../assets/images/overflo-03.png";
-import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 import Image from "next/image";
 const Overflo = () => {
   const social_media = [
     { icon: <FaInstagram /> },
     { icon: <FaFacebook /> },
-    { icon: <FaLinkedin /> },
-    { icon: <FaTwitter /> },
+    { link: <a href="http://www.instagram.com/overflo91"></a> },
   ];
   const handleContactClick = () => {
     const contactSection = document.querySelector("#contact");
